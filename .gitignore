@@ -1,3 +1,9 @@
 .idea/
 node_modules/
 dist/
+src/*.js.map
+src/*.js
+test/*.js
+test/*.js.map
+defs/**/*.js
+defs/**/*.js.map

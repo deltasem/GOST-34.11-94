@@ -7,13 +7,21 @@
  * Created by Semen Kiryushin on 16.08.2015.
  */
 
-class Gost {
-	hash(input:ArrayBuffer):ArrayBuffer {
+export class Gost {
+	constructor(isCryptoPro:boolean) {
+	}
+
+	hashString(input:string):string {
 		return null;
 	}
 }
 
-export function gost(input:ArrayBuffer):ArrayBuffer {
-	var g = new Gost();
-	return g.hash(input);
+export function gostString(input:string):string {
+	var g = new Gost(false);
+	return g.hashString(input);
+}
+
+export function gostStringCryptoPro(input:string):string {
+	var g = new Gost(true);
+	return g.hashString(input);
 }
