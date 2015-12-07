@@ -28,7 +28,7 @@ gulp.task('default', function () {
 				module: 'commonjs'
 			}));
 	return tsResult
-			//.pipe(uglify())
+			//.pipe(uglify({}))
 			.pipe(sourcemaps.write('.')) // Now the sourcemaps are added to the .js file
 			.pipe(gulp.dest('./dist'));
 });
